@@ -393,3 +393,19 @@ for (i=0;i<=value;i++)
     console.log("power of 2^"+ i +" is " +power);
    }
 console.log("--------------------------------------------"); 
+
+//2. Write a program to prints the nth harmonic number
+let harmonicNumber=Math.floor(Math.random()*10)+1;
+let res = 0;
+let value1= 0;
+let j;
+console.log("\nHarmonic number series are:\n----------------------------------- ");
+for (j=1; j<=harmonicNumber; j++)
+  {
+      value1=1/j;
+      //result1 = result1 + value1;
+      result1 = res + 1/j;
+      console.log("1/"+ j +"  => "+value1);
+  }
+ console.log("\nSum of all "+ harmonicNumber +" Harmonic Numbers: " + res); 
+ console.log("--------------------------------------------"); 
