@@ -87,7 +87,7 @@ else
 }
 console.log("--------------------------------------------"); 
 
-//2.Write a program that takes day and month from the command line and prints true if day of month is between March 20 and June 20, false otherwise.
+//2.Write a program that takes day and month and prints true if day of month is between March 20 and June 20, false otherwise.
 let month=5;
 let date=20;
 if(((month <= 6 && date <= 20) && ((month >= 3 && date <= 20) && (date<31))))
@@ -97,5 +97,25 @@ if(((month <= 6 && date <= 20) && ((month >= 3 && date <= 20) && (date<31))))
 else
 {
    console.log("False");
+} 
+console.log("--------------------------------------------"); 
+
+//3.Write a program that takes a year as input and outputs the Year is a Leap Year or not a Leap Year. A Leap Year checks for 4 Digit Number, Divisible by 4 and not 100 unless divisible by 400.
+let year=1987;
+if(year % 400 == 0)
+{
+   console.log(year+" is a Leap year");
+}
+else if(year % 4 == 0)
+{
+   console.log(year+" is a Leap year");
+}
+else if(year % 100 == 0)
+{
+   console.log(year+" is Not a Leap year");
+}
+else
+{
+   console.log(year+" is Not a Leap year");
 } 
 console.log("--------------------------------------------"); 
