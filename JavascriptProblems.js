@@ -19,46 +19,33 @@ console.log("Sum of two random dice: " + add);
 console.log("--------------------------------------------"); 
 
 //UC4-– Write a program that reads 5 Random 2 Digit values ,then find their sum and the average
-let num1=Math.floor(Math.random() * 100);
-let num2=Math.floor(Math.random() * 100);
-let num3=Math.floor(Math.random() * 100);
-let num4=Math.floor(Math.random() * 100);
-let num5=Math.floor(Math.random() * 100);
-let sum=num1 + num2 + num3 + num4 + num5;
-let average=sum/5;
-console.log("Sum : " + sum); 
+let num1=Math.floor(Math.random() * 90)+10;
+let num2=Math.floor(Math.random() * 90)+10;
+let num3=Math.floor(Math.random() * 90)+10;
+let num4=Math.floor(Math.random() * 90)+10;
+let num5=Math.floor(Math.random() * 90)+10;
+let sum1=num1 + num2 + num3 + num4 + num5;
+console.log("First number value ==> "+num1);
+console.log("Second number value ==> "+num2);
+console.log("First number value ==> "+num3);
+console.log("Second number value ==> "+num4);
+console.log("First number value ==> "+num5);
+let average=sum1/5;
+console.log("Sum : " + sum1); 
 console.log("Average: " + average);  
-console.log("--------------------------------------------"); 
-
-//UC5- Unit Conversion 
-//a. 1ft = 12 in then 42 in = ? ft 
-let inches=42;
-let ft=inches/12;
-console.log("Conversion inches into ft : " + ft); 
-//b. Rectangular Plot of 60 feet x 40 feet in meters
-let feet1=60; 
-let feet2=40;
-let meters1=60 /3.281; 
-let meters2=40 /3.281;
-let product=meters1 * meters2; 
-console.log("Conversion feet into meter: " + product); 
-//c. Calculate area of 25 such plots in acres
-let area=25;
-let result1=area / 43560;
-console.log("Result : " + result1);
 console.log("--------------------------------------------"); 
 
 //--Selection Practice Problems with if & else  
 //1.Write a program that reads 5 Random 3 Digit values and then outputs the minimum and the maximum value
-let number1=Math.floor(Math.random() * 1000);
+let number1=Math.floor(Math.random() * 900)+100;
 console.log("first number: "+number1);
-let number2=Math.floor(Math.random() * 1000);
+let number2=Math.floor(Math.random() * 900)+100;
 console.log("Second number: "+number2);
-let number3=Math.floor(Math.random() * 1000);
+let number3=Math.floor(Math.random() * 900)+100;
 console.log("third number: "+number3);
-let number4=Math.floor(Math.random() * 1000);
+let number4=Math.floor(Math.random() * 900)+100;
 console.log("four number: "+number4);
-let number5=Math.floor(Math.random() * 1000);
+let number5=Math.floor(Math.random() * 900)+100;
 console.log("five number: "+number5);
 
 if(number1> number2 && number1>number3 && number1> number4 && number1> number5 )
