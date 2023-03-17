@@ -35,7 +35,6 @@ console.log("Sum : " + sum1);
 console.log("Average: " + average);  
 console.log("--------------------------------------------"); 
 
-<<<<<<< HEAD
 //--Selection Practice Problems with if & else  
 //1.Write a program that reads 5 Random 3 Digit values and then outputs the minimum and the maximum value
 let number1=Math.floor(Math.random() * 900)+100;
@@ -73,7 +72,6 @@ else
 {
     console.log("Greater number ==> "+number5);
 }
-=======
 //UC5- Unit Conversion 
 //a. 1ft = 12 in then 42 in = ? ft 
 let inches=42;
@@ -90,5 +88,4 @@ console.log("Conversion feet into meter: " + product);
 let area=25;
 let result1=area / 43560;
 console.log("Result : " + result1);
->>>>>>> UC5-UnitConversion
 console.log("--------------------------------------------"); 
