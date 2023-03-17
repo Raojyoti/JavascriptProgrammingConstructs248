@@ -400,17 +400,14 @@ for (i=0;i<=value;i++)
 console.log("--------------------------------------------"); 
 
 //2. Write a program to prints the nth harmonic number
-let harmonicNumber=Math.floor(Math.random()*10)+1;
-let res = 0;
-let value1= 0;
-let j;
-console.log("\nHarmonic number series are:\n----------------------------------- ");
-for (j=1; j<=harmonicNumber; j++)
-  {
-      value1=1/j;
-      //result1 = result1 + value1;
-      result1 = res + 1/j;
-      console.log("1/"+ j +"  => "+value1);
-  }
- console.log("\nSum of all "+ harmonicNumber +" Harmonic Numbers: " + result1); 
+let harmonicNumber=Math.floor(Math.random() * 10)+1;
+let sumOfNumber=0;
+let k;
+for(k=1; k<=harmonicNumber; k++)
+{
+    let value=1/k;
+    sumOfNumber=sumOfNumber + value;
+    console.log("1/"+k);
+}
+console.log("sum of harmonic series are:  "+sumOfNumber);
  console.log("--------------------------------------------"); 
