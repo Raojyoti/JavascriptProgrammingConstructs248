@@ -19,14 +19,19 @@ console.log("Sum of two random dice: " + add);
 console.log("--------------------------------------------"); 
 
 //UC4-– Write a program that reads 5 Random 2 Digit values ,then find their sum and the average
-let num1=Math.floor(Math.random() * 100);
-let num2=Math.floor(Math.random() * 100);
-let num3=Math.floor(Math.random() * 100);
-let num4=Math.floor(Math.random() * 100);
-let num5=Math.floor(Math.random() * 100);
-let sum=num1 + num2 + num3 + num4 + num5;
-let average=sum/5;
-console.log("Sum : " + sum); 
+let num1=Math.floor(Math.random() * 90)+10;
+let num2=Math.floor(Math.random() * 90)+10;
+let num3=Math.floor(Math.random() * 90)+10;
+let num4=Math.floor(Math.random() * 90)+10;
+let num5=Math.floor(Math.random() * 90)+10;
+let sum1=num1 + num2 + num3 + num4 + num5;
+console.log("First number value ==> "+num1);
+console.log("Second number value ==> "+num2);
+console.log("First number value ==> "+num3);
+console.log("Second number value ==> "+num4);
+console.log("First number value ==> "+num5);
+let average=sum1/5;
+console.log("Sum : " + sum1); 
 console.log("Average: " + average);  
 console.log("--------------------------------------------"); 
 
@@ -50,15 +55,15 @@ console.log("--------------------------------------------");
 
 //--Selection Practice Problems with if & else  
 //1.Write a program that reads 5 Random 3 Digit values and then outputs the minimum and the maximum value
-let number1=Math.floor(Math.random() * 1000);
+let number1=Math.floor(Math.random() * 900)+100;
 console.log("first number: "+number1);
-let number2=Math.floor(Math.random() * 1000);
+let number2=Math.floor(Math.random() * 900)+100;
 console.log("Second number: "+number2);
-let number3=Math.floor(Math.random() * 1000);
+let number3=Math.floor(Math.random() * 900)+100;
 console.log("third number: "+number3);
-let number4=Math.floor(Math.random() * 1000);
+let number4=Math.floor(Math.random() * 900)+100;
 console.log("four number: "+number4);
-let number5=Math.floor(Math.random() * 1000);
+let number5=Math.floor(Math.random() * 900)+100;
 console.log("five number: "+number5);
 
 if(number1> number2 && number1>number3 && number1> number4 && number1> number5 )
@@ -407,5 +412,5 @@ for (j=1; j<=harmonicNumber; j++)
       result1 = res + 1/j;
       console.log("1/"+ j +"  => "+value1);
   }
- console.log("\nSum of all "+ harmonicNumber +" Harmonic Numbers: " + res); 
+ console.log("\nSum of all "+ harmonicNumber +" Harmonic Numbers: " + result1); 
  console.log("--------------------------------------------"); 
