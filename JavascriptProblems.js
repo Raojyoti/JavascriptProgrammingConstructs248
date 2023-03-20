@@ -103,3 +103,98 @@ else
    console.log("False");
 } 
 console.log("--------------------------------------------"); 
+
+//Repetition Practice Problems with while loop
+//1.Write a program that takes a command-line argument n and prints a table of the powers of 2 that are less than or equal to 2^n till 256 is reached..
+let powervalue=Math.floor(Math.random()*10);
+let n=0;
+while (n<=powervalue)
+   {
+    let powerValue=Math.pow(2,n);
+    console.log("power of 2^"+ n +" is " +powerValue);
+    n++
+   } 
+console.log("--------------------------------------------");    
+
+//Functions Practice Problems
+//1.Help user find degF or degC based on their Conversion Selection. Use Case Statement and ensure that the inputs are within the Freezing Point (  0 °C / 32 °F ) and the Boiling Point of Water ( 100 °C / 212 °F )
+   //a. degF = (degC * 9/5) + 32
+   //b. degC = (degF – 32) * 5/9
+
+   function findDegF(degC)
+   {
+      degF = (degC * 9/5) + 32;
+      return degF;
+   }
+   let x1=findDegF(100)
+   console.log("Result in degF: " + x1+"F");
+
+   function findDegC(degF)
+   {
+      degC=(degF - 32) * 5/9;
+      return degC;
+   }
+   let y1=findDegC(212)
+   console.log("Result in degF: " + y1+"C"); 
+console.log("--------------------------------------------");    
+
+/* Array Practice Problems
+1. Write a program in the following steps
+a. Generates 10 Random 3 Digit number. 
+b. Store this random numbers into a array. 
+c. Then find the 2nd largest and the 2nd smallest element without sorting the array */
+
+let values=10;
+let arrayNum=new Array();
+let second=new Array();
+let first=new Array();
+//Generates 10 Random 3 Digit number.
+for(let i=0; i<values; i++)
+{
+    arrayNum[i]=Math.floor(Math.random()*900)+100;
+}
+console.log("Ten three digit random values are:\n-------------------------------------\n" + arrayNum);
+//without sort value find second largest 
+for (let i = 0; i < arrayNum.length; ++i) 
+{
+    if (first < arrayNum[i]) 
+    {
+        second = first;
+        first = arrayNum[i];
+    } 
+    else if (arrayNum[i] > second && arrayNum[i] != first) 
+    {
+        second = arrayNum[i];
+    }
+}
+if (second == first)
+{
+   console.log("There is no second largest element\n");
+}
+else
+{
+   console.log("\nThe Second largest element in the array is: "+ second);
+}
+//without sort find second smallest value 
+for (let i = 0; i < arrayNum.length; ++i)
+ {
+    if (first > arrayNum[i])
+     {
+        second = first;
+        first = arrayNum[i];
+     } 
+    else if (arrayNum[i] < second && arrayNum[i] != first) 
+    {
+        second = arrayNum[i];
+    }
+}
+if (second == first)
+   {
+      console.log("There is no second smallest element\n");
+   }
+else
+{
+   console.log("The Second largest element in the array is: "+ second);
+}
+console.log("-------------------------------------------------------");  
+
