@@ -569,3 +569,16 @@ console.log("Ten three digit random values after sort are:\n--------------------
 console.log("second largest value: " + array[8]);
 console.log("second smallest value: " + array[1]);
 console.log("-------------------------------------------------------");
+
+//3. Take a range from 0 – 100, find the digits that are repeated twice like 33, 77, etc 
+
+let Num = new Array()
+for(let  i  = 0 ; i <= 100 ; i ++)
+{
+    if (i%11 == 0 && i !=0) 
+    {
+      Num.push(i)
+    }
+}
+console.log("The reapeated numbers are:-\n------------------------------\n"+Num)
+console.log("-------------------------------------------------------");  
